@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "mc-emulator",
+	"version": "${version}",
+	"name": "MCEmulator",
+	"description": "Full on CPU emulator written in Java! This runs in Minecraft!",
+	"authors": [
+		"Raphtik@GHG (MC: _TheLinuxGuy_)"
+	],
+	"contact": {
+		"homepage": "https://raphtikatghg.github.io/main",
+		"sources": "https://github.com/RaphtikAtGHG/MCEmulator"
+	},
+	"license": "Apache License Version 2.0",
+	"icon": "assets/mc-emulator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.raphtikatghg.MCEmulator"
+		]
+	},
+	"mixins": [
+		"mc-emulator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
